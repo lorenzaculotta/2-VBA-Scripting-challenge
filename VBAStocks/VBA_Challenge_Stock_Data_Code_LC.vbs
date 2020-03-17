@@ -68,7 +68,7 @@ For Each ws In Worksheets
                                    
                            
                            
-            'calculate percent change and print in summary table, with "percent" formatting. Avoid proble with 0 (example PLNT)
+            'calculate percent change and print in summary table, with "percent" formatting. Avoid problem with 0 (example PLNT)
             If (yearly_change = 0) Or (open_price = 0) Then
                 ws.Range("K" & summary_table_row).Value = 0
                         
