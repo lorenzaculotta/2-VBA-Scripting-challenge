@@ -70,7 +70,7 @@ For Each ws In Worksheets
                            
             'calculate percent change and print in summary table, with "percent" formatting. Avoid proble with 0 (example PLNT)
             If (yearly_change = 0) Or (open_price = 0) Then
-                ws.Range("K" & summary_table_row).Value = "Null"
+                ws.Range("K" & summary_table_row).Value = 0
                         
             Else
                 percent_change = yearly_change / open_price                           
